@@ -1,0 +1,37 @@
+export const apiKey = '7593aefa5308414296c183605252306';
+
+export const weatherImages = {
+  'Partly cloudy': require('../assets/Images/partly-cloudy.png'),
+  'Partly Cloudy': require('../assets/Images/partly-cloudy.png'),
+  'Partly Cloudy ': require('../assets/Images/partly-cloudy.png'),
+  'Moderate rain': require('../assets/Images/moderate rain.png'),
+  'Patchy rain possible': require('../assets/Images/moderate rain.png'),
+  cloud: require('../assets/Images/cloud.png'),
+  Clouds: require('../assets/Images/clouds.png'),
+  Cloudy: require('../assets/Images/cloudy.png'),
+  Drizzle: require('../assets/Images/drizzle.png'),
+  'Light drizzle': require('../assets/Images/drizzle.png'),
+  'Patchy rain nearby': require('../assets/Images/drizzle.png'),
+  Foggy: require('../assets/Images/foggy.png'),
+  Frost: require('../assets/Images/frost.png'),
+  Hail: require('../assets/Images/hail.png'),
+  Heatwave: require('../assets/Images/heatwave.png'),
+  Hot: require('../assets/Images/hot.png'),
+  Mist: require('../assets/Images/misty.png'),
+  'Light rain': require('../assets/Images/light-rain.png'),
+  'Mostly sunny': require('../assets/Images/mostly-sunny.png'),
+  Rainbow: require('../assets/Images/rainbow.png'),
+  'Moderate rain at times': require('../assets/Images/moderate rain.png'),
+  'Heavy rain': require('../assets/Images/heavy-rain.png'),
+  'Heavy rain at times': require('../assets/Images/heavy-rain.png'),
+  'Moderate or heavy freezing shower': require('../assets/Images/heavy-rain.png'),
+  'Moderate or heavy rain shower': require('../assets/Images/heavy-rain (1).png'),
+  'Moderate or heavy rain with thunder': require('../assets/Images/heavy-rain (1).png'),
+  Fog: require('../assets/Images/foggy.png'),
+  Overcast: require('../assets/Images/cloud.png'),
+  'Overcast ': require('../assets/Images/cloud.png'),
+  Sunny: require('../assets/Images/sun.png'),
+  Clear: require('../assets/Images/sun.png'), // fixed from 'clear' and 'sun.png.png'
+  'Clear ': require('../assets/Images/sun.png'), // fixed from 'clear' and 'sun.png.png'
+  other: require('../assets/Images/moderate rain.png'),
+};
