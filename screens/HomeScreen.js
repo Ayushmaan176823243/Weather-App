@@ -8,6 +8,7 @@ import {
   TextInput,
   TouchableOpacity,
   ScrollView,
+  Platform,
 } from 'react-native';
 import { theme } from 'theme';
 import { CalendarDaysIcon, MagnifyingGlassIcon } from 'react-native-heroicons/outline';
@@ -83,10 +84,15 @@ export const HomeScreen = () => {
       ) : (
         <SafeAreaView className="flex-1">
           {/* Search Section */}
-          <View style={{ height: '7%' }} className="relative z-50 mx-4">
+          <View
+            style={{ height: '7%', marginTop: Platform.OS === 'android' ? 40 : 0 }}
+            className="relative z-50 mx-4 mt-10">
             <View
-              className="flex-row items-center justify-end rounded-full"
-              style={{ backgroundColor: showSearch ? theme.bgWhite(0.2) : 'transparent' }}>
+              className="flex-row items-center justify-end rounded-full "
+              style={{
+                backgroundColor: showSearch ? theme.bgWhite(0.2) : 'transparent',
+                borderRadius: 60,
+              }}>
               {showSearch && (
                 <TextInput
                   onChangeText={handleTextDebounce}
@@ -197,7 +203,10 @@ export const HomeScreen = () => {
                   <View
                     key={index}
                     className="mr-4 mt-2 flex w-24 items-center justify-center space-y-1 rounded-3xl py-3 "
-                    style={{ backgroundColor: theme.bgWhite(0.15) }}>
+                    style={{
+                      backgroundColor: theme.bgWhite(0.15),
+                      marginBottom: Platform.OS === 'android' ? 25 : 0,
+                    }}>
                     <Image
                       source={weatherImages[item?.day?.condition?.text]}
                       className="h-11 w-11"
